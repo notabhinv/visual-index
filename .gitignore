@@ -1,0 +1,36 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+ 
+# Secrets — never commit these
+credentials.json
+token.json
+.env
+ 
+# Large local data — not part of source
+lfw_images/
+data/
+tests/fixtures/
+stl10_images/
+stl10_data/
+tobacco3482_data/
+tobacco3482_images/
+ 
+# Docker
+# (docker-compose.yml and Dockerfile ARE tracked, this just excludes runtime volumes if any appear locally)
+ 
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ 
+# Logs & runtime data
+*.log
+Log
+celerybeat-schedule*
+tobacco3482_sample/
+ 
